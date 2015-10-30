@@ -7,7 +7,7 @@ usage() {
   exit
 }
 
-IMAGE="anaderi/rep:latest"
+IMAGE="yandex/rep:0.6.3"
 REPDIR=`cd "$(dirname $0)" && pwd -P`
 source $REPDIR/_functions.sh
 protocol=http

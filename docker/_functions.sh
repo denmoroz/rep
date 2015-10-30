@@ -39,7 +39,7 @@ is_instance_dir() {
 get_rep_host() {
   host=localhost
   if [ "$SYSTEM" == "Darwin" ] ; then
-    host=`boot2docker ip`
+    host=`docker-machine ip default`
   fi
   echo $host
 }
